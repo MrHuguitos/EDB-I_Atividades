@@ -1,6 +1,21 @@
 #include <iostream>
 using namespace std;
 
+/* 
+int buscaBinaria(int arr[], int inicio, int fim, int alvo) {
+    if (inicio > fim) return -1;
+
+    int meio = (inicio + fim) / 2;
+
+    if (arr[meio] == alvo) return meio;
+    return (arr[meio] > alvo) ? buscaBinaria(arr, inicio, meio - 1, alvo) : buscaBinaria(arr, meio + 1, fim, alvo);
+}
+
+int busca(int arr[], int tamanho, int alvo) {
+    return buscaBinaria(arr, 0, tamanho -1, alvo);
+}
+*/
+
 int buscaBinaria(int arr[], int tamanho, int alvo) {
     int inicio = 0;
     int fim = tamanho - 1;
